@@ -52,7 +52,6 @@ class UserService
     try {
        return User::findOrFail($id)->delete();
     }catch (\Exception $exception){
-      dd($exception); exit();
       return false;
     }
   }
